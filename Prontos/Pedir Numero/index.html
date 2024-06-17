@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Formulário</title>
+</head>
+<header>
+    <h1>Pesquisa Institucional</h1>
+</header>
+<body>
+    <div id="conteudo">
+        <p>Antes de começarmos precisamos que preencha os campos a seguir:</p>
+        <form>
+            <label for="nome">Digite seu nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        
+            <label for="numero">Digite seu número de celular:</label>
+            <input type="number" id="numero" name="numero" required>
+        
+            <label for="insta">Digite seu Instagram:</label>
+            <input type="text" id="insta" name="insta" required>
+            
+            <h2>Pronto! Agora podemos ir para o que interessa de fato.</h2>
+
+            <label for="nivel">De 0 à 10 qual nota de beleza você daria para a pessoa que pediu <br>para você responder esse formulário? </label>
+            
+            <input type="range" id="nivel" min="0" max="10" step="2" value="20" oninput="exibirMensagem()" required>
+            <span class="valor-label">0</span>
+            <span class="valor-label" style="left: 20%;">2</span>
+            <span class="valor-label" style="left: 40%;">4</span>
+            <span class="valor-label" style="left: 60%;">6</span>
+            <span class="valor-label" style="left: 80%;">8</span>
+            <span class="valor-label" style="left: 100%;">10</span>
+            
+            <div id="mensagemCorreta" style="display: none;">
+                <h4>Boaa! Resposta correta!</h4>
+            </div>
+            <div id="mensagemIncorreta" style="display: none;">
+                <h5>Resposta incorreta! TENTE NOVAMENTE</h5>
+            </div>
+
+            <button type="button" onclick="gerarArquivo()">Enviar</button>
+
+
+            <div id="mensagemAgradecimento" style="display: none;">
+                <h1>Obrigado por enviar o formulário!</h1>
+                <h3>Sua opnião é muito importante para nós</h3>
+            </div>
+        </form>
+
+        <script>
+           
+           function exibirMensagem() {
+                var nivelInput = document.getElementById('nivel');
+                var nivel = nivelInput.value;
+
+                // Verificar a nota de beleza
+                if (nivel == 10) {
+                    document.getElementById('mensagemCorreta').style.display = 'block';
+                    document.getElementById('mensagemIncorreta').style.display = 'none';
+                } else {
+                    document.getElementById('mensagemCorreta').style.display = 'none';
+                    document.getElementById('mensagemIncorreta').style.display = 'block';
+                }
+            }
+
+            function gerarArquivo() {
+                var nome = document.getElementById("nome").value;
+                var numero = document.getElementById("numero").value;
+                var insta = document.getElementById("insta").value;
+                var nivel = document.getElementById("nivel").value;
+                
+                if (nivel == 10){
+                    
+                // Criar o conteúdo do arquivo
+                var conteudoTexto = "Nome: " + nome + "\nNumero: " + numero + "\nInstagram: " + insta + "\nNivel: " + nivel;
+
+                // Criar um blob com o conteúdo de texto
+                var blob = new Blob([conteudoTexto], { type: 'text/plain' });
+
+                // Criar um link de download
+                var linkDownload = document.createElement('a');
+                linkDownload.href = window.URL.createObjectURL(blob);
+                linkDownload.download = 'respostas.txt';
+
+                // Adicionar o link ao corpo e clicar nele para iniciar o download
+                document.body.appendChild(linkDownload);
+                linkDownload.click();
+
+                // Remover o link após o download
+                document.body.removeChild(linkDownload);
+
+                // Exibir a mensagem de agradecimento
+                var mensagemAgradecimento = document.getElementById('mensagemAgradecimento');
+                mensagemAgradecimento.style.display = 'block';
+
+                return false
+
+                } 
+                
+            }
+        </script>
+    </div>
+</body>
+</html>

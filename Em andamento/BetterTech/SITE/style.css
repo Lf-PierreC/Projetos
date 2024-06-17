@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: Inter, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Cabeçalho*/
+
+header {
+    display: flex;
+    width: 100%;
+    max-height: 80px;
+    box-shadow: 0 0px 10px 1px rgba(0, 0, 0, 0.5);
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+#logo-cabecalho {
+    max-height: 80px;
+    padding-left: 20px;
+}
+
+
+#menu {
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#list{
+    width: 50px;
+    color: #05567D;
+}
+
+/*Corpo*/
+/*Grid01*/
+
+#grid01-container {
+    display: grid;
+    grid-template-columns: 900px 300px;
+    grid-template-rows: 200px 70px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1500px;
+    gap: 20px;
+}
+
+
+#post01 {
+    color: white;  
+    border-radius: 5px;
+    background-image: url(imagens/Bannerpost01.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 6px 0.1px rgba(0, 0, 0, 0.3 );
+}
+
+#post01 h1{
+    margin: 0px;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+#post01 p {
+    font-size: 20px;
+    margin: 0px;
+    padding-left: 20px;
+}   
+
+#post02 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-image: url(imagens/post02.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 2px 2px 6px 0.1px rgba(0, 0, 0, 0.3 );
+}
+
+#post02 h1 {
+    font-size: 40px;
+    padding: 20px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+    align-items: baseline;
+}
+
+#post03 {
+    background-color: white;
+    box-shadow: 2px 2px 6px 0.1px rgba(0, 0, 0, 0.3 );
+    border-radius: 5px;
+}
+
+#post03 h1 {
+    font-size: 30px;
+    margin: 15px 0px;
+    padding-left: 20px;
+}
+

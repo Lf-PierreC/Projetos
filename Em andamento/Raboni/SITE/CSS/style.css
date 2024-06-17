@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'fonte1';
+    src: url('../Fontes/Roboto-BlackItalic.ttf');
+    font-weight: bolder;
+    font-style: italic;
+  }
+
+
+
+body {
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    height: 200px;
+}
+
+ul#cabecalho  {
+    display: flex;
+    font-family: "fonte1";
+    color: white;
+    list-style: none;
+}
+
+ul#cabecalho li {
+    margin-left: 15px;
+}
