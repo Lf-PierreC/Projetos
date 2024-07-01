@@ -62,3 +62,17 @@ function gerarArquivo() {
     } 
     
 }
+
+function validar() {
+    let nome = document.getElementById('nome').value
+    let numero = document.getElementById('numero').value
+    let insta = document.getElementById('insta').value
+    
+    if (nome == '' || numero == '' || insta == ''){
+        document.getElementById('mensagemIncorreta').style.display = 'block'
+    } else {
+        window.location.href = 'pagina2.html'
+    }
+
+
+}
