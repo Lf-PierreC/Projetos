@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<header>
+    <div id="seta-voltar">
+    <a href="pagina2.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+      </svg>
+    </a>
+    </div>
+    <h1 id="pag2">Pesquisa Institucional</h1>
+</header>
+<body>
+    <div class="conteudo">
+        <h2>Pronto! Agora podemos ir para o que interessa de fato.</h2>
+        <form>
+            
+
+                <label for="nivel">De 0 a 10, qual a probabilidade de você aceitar tomar um café comigo? ☕ </label>
+                
+                <input type="range" class="nivel" id="nivel2" min="0" max="10" step="2" value="20" oninput="exibirMensagem2()" required>
+                <div id="container-range">
+                <span class="valor-label">0</span>
+                <span class="valor-label" style="left: 20%;">2</span>
+                <span class="valor-label" style="left: 40%;">4</span>
+                <span class="valor-label" style="left: 60%;">6</span>
+                <span class="valor-label" style="left: 80%;">8</span>
+                <span class="valor-label" style="left: 100%;">10</span>
+                </div>
+
+            
+                <div id="mensagemCorreta" style="display: none;">
+                    <h4>Boaa! Resposta correta!</h4>
+                </div>
+                <div id="mensagemTaquase" style="display: none;">
+                    <h4>Ta quase lá...</h4>
+                </div>
+                <div id="mensagemMaisumpouco" style="display: none;">
+                    <h4>Tenta mais um pouquinho...</h4>
+                </div>
+                <div id="mensagemIncorreta" style="display: none;">
+                    <h4>Resposta incorreta! TENTE NOVAMENTE</h5>
+                </div>
+
+                <button type="button" onclick="gerarArquivo()">Enviar</button>
+        </form>
+        <script src="function.js"></script>
+    </div>
+</body>
+</html>
