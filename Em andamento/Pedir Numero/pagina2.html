@@ -23,7 +23,7 @@
 
                 <label for="nivel">De 0 à 10 qual nota de beleza você daria <br>para a pessoa que pediu para você<br> responder esse formulário? </label>
                 
-                <input type="range" id="nivel" min="0" max="10" step="2" value="20" oninput="exibirMensagem()" required>
+                <input type="range" class="nivel" id="nivel1" min="0" max="10" step="2" value="20" oninput="exibirMensagem1()" required>
                 <div id="container-range">
                 <span class="valor-label">0</span>
                 <span class="valor-label" style="left: 20%;">2</span>
@@ -33,6 +33,7 @@
                 <span class="valor-label" style="left: 100%;">10</span>
                 </div>
 
+            
                 <div id="mensagemCorreta" style="display: none;">
                     <h4>Boaa! Resposta correta!</h4>
                 </div>
@@ -46,7 +47,7 @@
                     <h4>Resposta incorreta! TENTE NOVAMENTE</h5>
                 </div>
 
-                <button type="button" onclick="gerarArquivo()">Enviar</button>
+                <button id="prosseguir" type="button" onclick="validar2()">Prosseguir</button>
         </form>
         <script src="function.js"></script>
     </div>
