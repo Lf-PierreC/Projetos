@@ -67,7 +67,7 @@ function gerarArquivo() {
     
     // Verifica se todos os campos estão preenchidos
     if (nome !== '' && numero !== '' && insta !== '' && nivel1 !== '' && nivel2 !== '') {
-        if (nivel2 == 10 || nivel1 == 10) {
+        if (nivel2 == 10 && nivel1 == 10) {
             // Criar o conteúdo do arquivo
             var conteudoTexto = "Nome: " + nome + "\nNumero: " + numero + "\nInstagram: " + insta + "\nNota de beleza: " + nivel1 + "\nNota da chance: " + nivel2;
 
@@ -108,7 +108,8 @@ function validar() {
     if (nome == '' || numero == '' || insta == ''){
         document.getElementById('mensagemIncorreta').style.display = 'block'
     } else {
-        window.location.href = 'pagina2.html'
+        document.getElementById('pagina-01').style.display = 'none'
+        document.getElementById('pagina-02').style.display = 'block'
     }
 
 }
@@ -119,7 +120,8 @@ function validar2() {
     if (nivel != 10){
         document.getElementById('mensagemIncorreta').style.display = 'block'
     } else {
-        window.location.href = 'pagina3.html'
+        document.getElementById('pagina-02').style.display = 'none'
+        document.getElementById('pagina-03').style.display = 'block'
     }
 
 }

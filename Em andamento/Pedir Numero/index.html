@@ -7,10 +7,17 @@
     <title>Formulário</title>
 </head>
 <header>
+   <!--<div id="seta-voltar" >
+        <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+          </svg>
+        </a>
+        </div>--> 
     <h1 id="index">Pesquisa Institucional</h1>
 </header>
 <body>
     <div class="conteudo">
+        <div id="pagina-01" style="display: block;">
         <h2>Antes de começarmos precisamos que preencha os campos a seguir</h2>
         <form >
             <label for="nome">Digite seu nome</label>
@@ -22,13 +29,14 @@
             <label for="insta">Digite seu Instagram</label>
             <input type="text" id="insta" name="insta" required>
 
-            <!--<button id="prosseguir" type="button" onclick="validar()">Prosseguir</button>-->
+            <button id="prosseguir" type="button" onclick="validar()">Prosseguir</button>
         </form>
         
         <div id="mensagemIncorreta" style="display: none;">
             <h4>Preencha todos os campos para prosseguir!</h5>
         </div>
-        
+        </div>
+        <div id="pagina-02" style="display: none;">
         <h2>Pronto! Agora podemos ir para o que interessa de fato.</h2>
         <form>
             
@@ -59,9 +67,11 @@
                     <h4>Resposta incorreta! TENTE NOVAMENTE</h5>
                 </div>
 
-                <!--<button id="prosseguir" type="button" onclick="validar2()">Prosseguir</button>-->
+                <button id="prosseguir" type="button" onclick="validar2()">Prosseguir</button>
         </form>
+        </div>
 
+        <div id="pagina-03" style="display: none;">
         <form>
             
 
@@ -101,6 +111,7 @@
         
 
         <script src="function.js"></script>
+    </div>
     </div>
 </body>
 </html>
