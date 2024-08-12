@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Inter:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'arial unicode';
+    src: url(fontes/arial-unicode-ms.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    background: radial-gradient(circle,#000000, #0F0022 );
+    margin: auto;
+    padding-bottom: 300px;
+}
+
+/* MENU */
+
+#home-icon {
+    position: absolute;
+    margin: 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: auto;
+}
+
+li{
+    font: 'arial unicode';
+    color: white;
+    padding: 20px;
+    display: flex;
+    font-size: 15pt;
+    
+}
+
+/* HOME */
+
+#home {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 400px;
+    color: white;
+    text-align: center;
+}
+
+
+#foto-perfil {
+    grid-column: 1/1;
+    perspective: 1000px;
+    transition: transform 0.5s;
+}
+
+.circulo {
+    position: absolute;
+    
+}
+
+#foto-perfil:hover {
+    transform: translateY(30px) translateX(20px);
+}
+
+#circulo-01 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 40%;
+    margin-top: 75px;
+    box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+#circulo-01 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#circulo-02 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 35%;
+    margin-top: 60px;
+    background: -webkit-radial-gradient(circle,#AC1A80,#BD00C0);
+    box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+#circulo-03 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 30%;
+    margin-top: 45px;
+    background-color: white;
+    box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+#texto {
+    grid-column: 2/2;
+    margin: auto 0px auto 0px;
+}
+
+#texto h1 {
+    text-align: left;
+    font-family: 'Anton', sans-serif;
+    font-size: 60pt;
+    background: linear-gradient(97deg, #BD00C0, #E914C2, #F555E9, #BD00C0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+#texto {
+    text-align: left;
+    font-family: 'Abel', sans-serif;
+    font-size: 20pt;
+}
+
+/* SKILLS */
+
+#skills {
+    color: white;
+    text-align: center;
+    padding-top: 250px;
+    font-family: 'Anton', sans-serif;
+    font-size: 20pt;
+}
+
+#skills p {
+    font-family: 'arial unicode', sans-serif;
+    font-size: 18pt;
+    padding-top: 10px;
+}
+
+.skill {
+    width: 200px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.icon-skill {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.estrela {
+    padding-top: 15px;
+    margin: auto;
+}
+
+#nivel {
+    display: flex;
+}
