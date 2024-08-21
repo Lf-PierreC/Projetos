@@ -2,7 +2,7 @@
 
 function nivelEstrela() {
     const estrelas = document.querySelectorAll('.estrela')
-    let nivel = 3
+    let nivel = 2.5
 
     for (let contEstrela = 0; contEstrela < estrelas.length; contEstrela++){
         const estrela = estrelas[contEstrela];
@@ -69,7 +69,7 @@ function nivelEstrela() {
             document.getElementById('vazia-01').style.display='none'
             document.getElementById('vazia-02').style.display='none'
             document.getElementById('vazia-03').style.display='none'
-            document.getElementById('vazia-04').style.display='none'
+            document.getElementById('vazia-04').style.display='none' 
             document.getElementById('vazia-05').style.display='none'
             document.getElementById('cheia-01').style.display='inline'
             document.getElementById('cheia-02').style.display='inline'
@@ -89,3 +89,6 @@ for (let contSkill = 0; contSkill < skills.length; contSkill++){
     nivelEstrela();
 
 }
+
+document.createElement('div.estrela')
+document.appendChild

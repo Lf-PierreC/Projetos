@@ -14,6 +14,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: arial;
     background: radial-gradient(circle,#000000, #0F0022 );
@@ -25,14 +26,14 @@ body {
 
 #home-icon {
     position: absolute;
-    margin: 30px;
+    margin: 20px;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 85px;
 }
 
 .menu {
@@ -174,6 +175,10 @@ li{
     color: transparent;
 }
 
+#texto p {
+    margin-right: 20px;
+}
+
 #texto {
     text-align: left;
     font-family: 'Abel', sans-serif;
@@ -188,6 +193,10 @@ li{
     padding-top: 250px;
     font-family: 'Anton', sans-serif;
     font-size: 20pt;
+}
+
+#skills-container{
+    display: flex;
 }
 
 #skills p {
