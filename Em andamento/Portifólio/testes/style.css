@@ -44,6 +44,6 @@ body {
     margin: auto;
 }
 
-#nivel {
+.nivel {
     display: flex;
 }
