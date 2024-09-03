@@ -1,0 +1,49 @@
+body {
+    font-family: arial;
+    background: radial-gradient(circle,#000000, #0F0022 );
+    margin: auto;
+    padding-bottom: 300px;
+}
+
+/* SKILLS */
+
+#skills {
+    color: white;
+    text-align: center;
+    padding-top: 250px;
+    font-family: 'Anton', sans-serif;
+    font-size: 20pt;
+}
+
+#skills-container{
+    display: flex;
+}
+
+#skills p {
+    font-family: 'arial unicode', sans-serif;
+    font-size: 18pt;
+    padding-top: 10px;
+}
+
+.skill {
+    width: 200px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.icon-skill {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.estrela {
+    padding-top: 15px;
+    margin: auto;
+}
+
+.nivel {
+    display: flex;
+}
