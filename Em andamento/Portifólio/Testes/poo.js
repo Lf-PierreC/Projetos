@@ -32,7 +32,167 @@ class skill {
             const estrela05 = document.createElement('div');
             estrela05.className = 'estrela' 
             estrela05.textContent = estrelaVazia;
-        } else if(nivel)
+        } else if(nivel >= 0.5 && nivel < 1){
+            const estrela01 = document.createElement('div');
+            estrela01.className = 'estrela' 
+            estrela01.textContent = estrelaMeia;
+            const estrela02 = document.createElement('div');
+            estrela02.className = 'estrela' 
+            estrela02.textContent = estrelaVazia;
+            const estrela03 = document.createElement('div');
+            estrela03.className = 'estrela' 
+            estrela03.textContent = estrelaVazia;
+            const estrela04 = document.createElement('div');
+            estrela04.className = 'estrela' 
+            estrela04.textContent = estrelaVazia;
+            const estrela05 = document.createElement('div');
+            estrela05.className = 'estrela' 
+            estrela05.textContent = estrelaVazia;
+        } else if(nivel >= 1 && nivel < 1.5){
+            const estrela01 = document.createElement('div');
+            estrela01.className = 'estrela' 
+            estrela01.textContent = estrelaCheia;
+            const estrela02 = document.createElement('div');
+            estrela02.className = 'estrela' 
+            estrela02.textContent = estrelaVazia;
+            const estrela03 = document.createElement('div');
+            estrela03.className = 'estrela' 
+            estrela03.textContent = estrelaVazia;
+            const estrela04 = document.createElement('div');
+            estrela04.className = 'estrela' 
+            estrela04.textContent = estrelaVazia;
+            const estrela05 = document.createElement('div');
+            estrela05.className = 'estrela' 
+            estrela05.textContent = estrelaVazia;
+        } else if(nivel >= 1.5 && nivel < 2){
+            const estrela01 = document.createElement('div');
+            estrela01.className = 'estrela' 
+            estrela01.textContent = estrelaCheia;
+            const estrela02 = document.createElement('div');
+            estrela02.className = 'estrela' 
+            estrela02.textContent = estrelaMeia
+            const estrela03 = document.createElement('div');
+            estrela03.className = 'estrela' 
+            estrela03.textContent = estrelaVazia;
+            const estrela04 = document.createElement('div');
+            estrela04.className = 'estrela' 
+            estrela04.textContent = estrelaVazia;
+            const estrela05 = document.createElement('div');
+            estrela05.className = 'estrela' 
+            estrela05.textContent = estrelaVazia;
+        } else if(niel >= 2 && nivel < 2.5){
+            const estrela01 = document.createElement('div');
+            estrela01.className = 'estrela' 
+            estrela01.textContent = estrelaCheia;
+            const estrela02 = document.createElement('div');
+            estrela02.className = 'estrela' 
+            estrela02.textContent = estrelaCheia
+            const estrela03 = document.createElement('div');
+            estrela03.className = 'estrela' 
+            estrela03.textContent = estrelaVazia;
+            const estrela04 = document.createElement('div');
+            estrela04.className = 'estrela' 
+            estrela04.textContent = estrelaVazia;
+            const estrela05 = document.createElement('div');
+            estrela05.className = 'estrela' 
+            estrela05.textContent = estrelaVazia;
+        } else if(nivel >= 2.5 && nivel < 3){
+            const estrela01 = document.createElement('div');
+            estrela01.className = 'estrela' 
+            estrela01.textContent = estrelaCheia;
+            const estrela02 = document.createElement('div');
+            estrela02.className = 'estrela' 
+            estrela02.textContent = estrelaCheia
+            const estrela03 = document.createElement('div');
+            estrela03.className = 'estrela' 
+            estrela03.textContent = estrelaMeia;
+            const estrela04 = document.createElement('div');
+            estrela04.className = 'estrela' 
+            estrela04.textContent = estrelaVazia;
+            const estrela05 = document.createElement('div');
+            estrela05.className = 'estrela' 
+            estrela05.textContent = estrelaVazia;
+        } else if(nivel >= 3 && nivel < 3.5){
+            const estrela01 = document.createElement('div');
+            estrela01.className = 'estrela' 
+            estrela01.textContent = estrelaCheia;
+            const estrela02 = document.createElement('div');
+            estrela02.className = 'estrela' 
+            estrela02.textContent = estrelaCheia
+            const estrela03 = document.createElement('div');
+            estrela03.className = 'estrela' 
+            estrela03.textContent = estrelaCheia;
+            const estrela04 = document.createElement('div');
+            estrela04.className = 'estrela' 
+            estrela04.textContent = estrelaVazia;
+            const estrela05 = document.createElement('div');
+            estrela05.className = 'estrela' 
+            estrela05.textContent = estrelaVazia;
+        } else if(nivel >= 3.5 && nivel < 4){
+            const estrela01 = document.createElement('div');
+            estrela01.className = 'estrela' 
+            estrela01.textContent = estrelaCheia;
+            const estrela02 = document.createElement('div');
+            estrela02.className = 'estrela' 
+            estrela02.textContent = estrelaCheia
+            const estrela03 = document.createElement('div');
+            estrela03.className = 'estrela' 
+            estrela03.textContent = estrelaCheia;
+            const estrela04 = document.createElement('div');
+            estrela04.className = 'estrela' 
+            estrela04.textContent = estrelaMeia;
+            const estrela05 = document.createElement('div');
+            estrela05.className = 'estrela' 
+            estrela05.textContent = estrelaVazia;
+        } else if(nivel >= 4 && nivel < 4.5){
+            const estrela01 = document.createElement('div');
+            estrela01.className = 'estrela' 
+            estrela01.textContent = estrelaCheia;
+            const estrela02 = document.createElement('div');
+            estrela02.className = 'estrela' 
+            estrela02.textContent = estrelaCheia
+            const estrela03 = document.createElement('div');
+            estrela03.className = 'estrela' 
+            estrela03.textContent = estrelaCheia;
+            const estrela04 = document.createElement('div');
+            estrela04.className = 'estrela' 
+            estrela04.textContent = estrelaCheia;
+            const estrela05 = document.createElement('div');
+            estrela05.className = 'estrela' 
+            estrela05.textContent = estrelaVazia;
+        } else if(nivel >= 4.5 && nivel < 5){
+            const estrela01 = document.createElement('div');
+            estrela01.className = 'estrela' 
+            estrela01.textContent = estrelaCheia;
+            const estrela02 = document.createElement('div');
+            estrela02.className = 'estrela' 
+            estrela02.textContent = estrelaCheia
+            const estrela03 = document.createElement('div');
+            estrela03.className = 'estrela' 
+            estrela03.textContent = estrelaCheia;
+            const estrela04 = document.createElement('div');
+            estrela04.className = 'estrela' 
+            estrela04.textContent = estrelaCheia;
+            const estrela05 = document.createElement('div');
+            estrela05.className = 'estrela' 
+            estrela05.textContent = estrelaMeia;
+        } else if(nivel >= 5){
+            const estrela01 = document.createElement('div');
+            estrela01.className = 'estrela' 
+            estrela01.textContent = estrelaCheia;
+            const estrela02 = document.createElement('div');
+            estrela02.className = 'estrela' 
+            estrela02.textContent = estrelaCheia
+            const estrela03 = document.createElement('div');
+            estrela03.className = 'estrela' 
+            estrela03.textContent = estrelaCheia;
+            const estrela04 = document.createElement('div');
+            estrela04.className = 'estrela' 
+            estrela04.textContent = estrelaCheia;
+            const estrela05 = document.createElement('div');
+            estrela05.className = 'estrela' 
+            estrela05.textContent = estrelaCheia;
+        }
     }
 
     criarElemento() {
@@ -56,7 +216,21 @@ class skill {
         nivelSkillContainer.className = 'nivel';
         nivelSkillContainer.value = this.nivelEstrela(this.nivel);
         
+        skillContainer.appendChild(iconSkill);
+        skillContainer.appendChild(nomeSkill);
+        skillContainer.appendChild(nivelSkillContainer);
 
-
+        return skillContainer;
     }
+
+    addSkill(container){
+        const skillElemento = this.criarElemento();
+        container.appendChild(skillElemento);
+    }
+
 }
+
+const seletorContainer = document.getElementById('skills-container');
+
+const skill1 = new skill('CSS', 3,'');
+skill1.addSkill(seletorContainer);
